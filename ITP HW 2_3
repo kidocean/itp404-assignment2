@@ -1,0 +1,12 @@
+Array.prototype.map2 = function(callbackFunction){
+  for (var i=0; i<this.length; i++){
+   callbackFunction(this[i]);
+  }
+};
+
+var numbers = [1, 2, 3, 4, 5];
+
+numbers.map2(function(number){
+  console.log(number);
+});
+
